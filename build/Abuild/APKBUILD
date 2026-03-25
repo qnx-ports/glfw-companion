@@ -1,6 +1,6 @@
 pkgname=glfw
 pkgver=3.4
-pkgrel=${pkgrel:-0}
+pkgrel=0
 pkgdesc="A multi-platform library for OpenGL, OpenGL ES, Vulkan, window and input "
 url="https://github.com/glfw/glfw"
 arch="x86_64"
@@ -48,7 +48,6 @@ package() {
 }
 
 
-options="$options ${DISABLE_CHECK:+!check}"
 sha512sums="
 39ad7a4521267fbebc35d2ff0c389a56236ead5fa4bdff33db113bd302f70f5f2869ff4e6db1979512e1542813292dff5a482e94dfce231750f0746c301ae9ed  glfw-3.4.tar.gz
 605170e5801aa6dab81559d3e515dee41f85d9679e08335b9062865f1a6530dce2fcc9605e73721cff693d701ea212ae63fd1844d5725999656ff5732597fdb9  00-cmake.patch
